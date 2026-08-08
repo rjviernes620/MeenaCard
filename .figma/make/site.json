@@ -1,0 +1,10 @@
+{
+  "description": "Create stunning digital wedding cards with personalized animations and transitions, perfectly optimized for iPhone viewing, making your special day unforgettable.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef } from "react"
 import confetti from "canvas-confetti"
+import wholesomeImg from "./assets/wholesome-photo.jpg"
+import memeImg from "./assets/meme.png"
 
 /* ── intersection reveal ── */
 function useInView(threshold = 0.15) {
@@ -428,7 +430,7 @@ export default function App() {
             background: "#130b10"
           }}>
             <img
-              src="/meme.png"
+              src={memeImg}
               alt="Meme"
               style={{ width: "100%", height: "auto", display: "block" }}
             />
@@ -458,7 +460,7 @@ export default function App() {
           }}>
             <div style={{ borderRadius: "22px", overflow: "hidden" }}>
               <img
-                src="/wholesome-photo.jpg"
+                src={wholesomeImg}
                 alt="A wholesome moment"
                 style={{ width: "100%", height: "290px", objectFit: "cover", objectPosition: "center 20%", opacity: 0.92, display: "block" }}
               />

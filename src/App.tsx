@@ -1,8 +1,7 @@
 import { useState, useEffect, useRef } from "react"
 import confetti from "canvas-confetti"
-
-const wholesomeImg = "./wholesome-photo.jpg"
-const memeImg = "./meme.png"
+import wholesomeImg from "./assets/wholesome-photo.jpg"
+import memeImg from "./assets/meme.png"
 
 /* ── intersection reveal ── */
 function useInView(threshold = 0.15) {

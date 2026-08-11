@@ -12,6 +12,11 @@ export default defineConfig(({ mode }) => {
 
   return {
     base: process.env.FIGMA_PUBLIC_URL ? `${process.env.FIGMA_PUBLIC_URL}/` : './',
+    define: {
+      'import.meta.env.VITE_VOUCHER_URL': JSON.stringify(
+        process.env.VITE_VOUCHER_URL || process.env.VOUCHER_URL || ''
+      ),
+    },
     build: {
       sourcemap: emitSourcemaps ? 'inline' : false,
       minify: !emitSourcemaps,

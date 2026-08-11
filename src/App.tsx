@@ -114,7 +114,9 @@ export default function App() {
   const [isWobbling, setIsWobbling] = useState(false)
   const particleIdRef = useRef(0)
 
-  const VOUCHER_URL = "https://trk.emails.virginexperiencedays.co.uk/l/01KZGSZ9X1VK3VTV3BZ3VCG6RV_1"
+  const VOUCHER_URL =
+    import.meta.env.VITE_VOUCHER_URL ||
+    import.meta.env.VOUCHER_URL
 
   const fireCelebrationConfetti = () => {
     try {

@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react"
 import confetti from "canvas-confetti"
 import wholesomeImg from "./assets/wholesome-photo.jpg"
 import memeImg from "./assets/meme.png"
+import roelImg from "./assets/roel-photo.jpg"
 
 /* ── intersection reveal ── */
 function useInView(threshold = 0.15) {
@@ -542,7 +543,7 @@ export default function App() {
             All crafted jokes aside. You're probably reading this after the event
             absolutely exhausted but hopefully enjoyed yourself. And as I spam speed
             finishing the code for this card (because I thought of this idea the day before)
-            I just wanted to say I love you lots and I'm so so proud of you. This is a huge ass moment
+            I just wanted to say I'm so so proud of you for this. This is a huge ass moment
             and I'm glad I could be a part of it.
           </p>
         </Reveal>
@@ -825,6 +826,39 @@ export default function App() {
 
             With love and good vibes from the crazy one, Roel
           </p>
+
+          {/* Roel's Photo with Comic Sans Speech Bubble */}
+          <div style={{
+            marginTop: "32px",
+            marginBottom: "36px",
+            borderRadius: "24px", overflow: "visible",
+            border: "2px solid rgba(212,175,55,0.35)",
+            boxShadow: "0 32px 80px rgba(0,0,0,0.6)",
+            position: "relative",
+            background: "#1a0e14",
+          }}>
+            <div style={{ borderRadius: "22px", overflow: "hidden" }}>
+              <img
+                src={roelImg}
+                alt="Roel"
+                style={{ width: "100%", height: "350px", objectFit: "cover", objectPosition: "center 20%", opacity: 0.95, display: "block" }}
+              />
+              <div style={{
+                position: "absolute", inset: 0,
+                background: "linear-gradient(to bottom, rgba(8,5,7,0.05) 0%, rgba(8,5,7,0.4) 100%)",
+                pointerEvents: "none"
+              }} />
+            </div>
+
+            <div style={{
+              position: "absolute", bottom: "-22px", left: "50%", transform: "translateX(-50%)",
+              textAlign: "center", width: "92%", zIndex: 5
+            }}>
+              <div className="comic-speech-bubble" style={{ fontFamily: "'Comic Neue', 'Comic Sans MS', 'Comic Sans', cursive, sans-serif", fontWeight: 700 }}>
+                "This is a hat"
+              </div>
+            </div>
+          </div>
 
           <div style={{ margin: "24px 0" }}>
             <Divider icon="💛" />

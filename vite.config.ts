@@ -14,7 +14,7 @@ export default defineConfig(({ mode }) => {
     base: process.env.FIGMA_PUBLIC_URL ? `${process.env.FIGMA_PUBLIC_URL}/` : './',
     define: {
       'import.meta.env.VITE_VOUCHER_URL': JSON.stringify(
-        process.env.VITE_VOUCHER_URL || process.env.VOUCHER_URL || ''
+        process.env.VITE_VOUCHER_URL || process.env.VOUCHER_URL || 'https://trk.emails.virginexperiencedays.co.uk/l/01KZGSZ9X1VK3VTV3BZ3VCG6RV_1'
       ),
     },
     build: {

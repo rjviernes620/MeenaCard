@@ -117,7 +117,8 @@ export default function App() {
 
   const VOUCHER_URL =
     import.meta.env.VITE_VOUCHER_URL ||
-    import.meta.env.VOUCHER_URL
+    import.meta.env.VOUCHER_URL ||
+    "https://trk.emails.virginexperiencedays.co.uk/l/01KZGSZ9X1VK3VTV3BZ3VCG6RV_1"
 
   const fireCelebrationConfetti = () => {
     try {
